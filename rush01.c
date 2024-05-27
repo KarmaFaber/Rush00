@@ -6,7 +6,7 @@
 /*   By: mrubal-c <mrubal-c@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 15:46:13 by mrubal-c          #+#    #+#             */
-/*   Updated: 2024/05/26 18:47:04 by ainigo-l         ###   ########.fr       */
+/*   Updated: 2024/05/25 18:21:23 by mrubal-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,18 @@ void	rush(int x, int y)
 	row = 1;
 	if (x > 0 && y > 0)
 	{
-		ft_putchar(x, 'o', '-', 'o');
+		ft_putchar(x, '/', '*', '\\');
 		write(1, "\n", 1);
 	}
 	while (x > 0 && row < y - 1)
 	{
-		ft_putchar(x, '|', ' ', '|');
+		ft_putchar(x, '*', ' ', '*');
 		write(1, "\n", 1);
 		row++;
 	}
 	if (y > 1)
 	{
-		ft_putchar(x, 'o', '-', 'o');
+		ft_putchar(x, '\\', '*', '/');
 		write(1, "\n", 1);
 	}
 }
